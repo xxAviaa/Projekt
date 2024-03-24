@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greendale Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="formularz.css" />
+  <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="desktop">
+      <a class="menu" href="index.html">Strona główna</a><a class="menu" href="profesorzy.html">Profesorzy</a><a
+        class="menu" href="plan_lekcji.html">Plan lekcji</a><a class="menu" href="formularz.html">Zapisz się!</a>
+    </nav>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="profesorzy.html">Profesorzy</a></li>
+          <li><a href="plan_lekcji.html">Plan lekcji</a></li>
+          <li><a href="formularz.html">Zapisz się</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="favicon.ico" id="menu">
+    </div>
+
+    <header>
+      <h2 class="title">FORMULARZ ZGŁOSZENIOWY </h2>
+    </header>
+
+
+
+
+    <section>
+      <article>
+        <div class="formularz">
+
+          <form>
+
+            <p>IMIĘ:
+              <input type="text">
+            </p>
+            <p>NAZWISKO:
+              <input type="text">
+            </p>
+            <p>RASA:
+              <br><label><input type="radio">Czarodziej czystej krwi</label>
+              <br><label><input type="radio">Człowiek</label>
+              <br><label><input type="radio">Elf</label>
+              <br><label><input type="radio">Inna <input type="text"></label>
+            </p>
+            <p>Data urodzin
+              <input type="date">
+            </p>
+            <p>Opowiedz o sobie! <br>
+              <textarea cols="90" rows="12"></textarea>
+            </p>
+            <p>
+              <button>Wyślij</button>
+            </p>
+          </form>
+        </div>
+
+        <div class="formularzyk">
+        </div>
+        <h2 class="mini">FORULARZ ZGŁOSZENIOWY</h2>
+        <form class="formularzyk">
+          <div>
+            <p>IMIĘ: <br>
+              <input type="text">
+            </p>
+
+            <p>NAZWISKO: <br>
+              <input type="text">
+            </p>
+            <p>RASA:
+              <br><label><input type="radio">Czarodziej czystej krwi</label>
+              <br><label><input type="radio">Człowiek</label>
+              <br><label><input type="radio">Elf</label>
+              <br><label><input type="radio">Inna <input type="text"></label>
+            </p>
+            <p>Data urodzin
+              <input type="date">
+            </p>
+            <p>Opowiedz o sobie! <br>
+              <textarea cols="20" rows="10"></textarea>
+            </p>
+            <p>
+              <button>Wyślij</button>
+            </p>
+        </form>
+
+  </div>
+
+
+  </article>
+  </section>
+
+
+  <footer>&copy Greendale Academy</footer>
+  </div>
+
+
+
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+        menu.src = "favicon.ico"
+      }
+      else {
+        sideNav.style.right = "-250px";
+        menu.src = "favicon.ico"
+      }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true
+    });
+
+  </script>
+</body>
+
+</html>
